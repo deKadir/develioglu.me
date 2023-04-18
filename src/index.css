@@ -18,6 +18,20 @@
   mark {
     @apply bg-secondary text-accent px-2;
   }
+  .animate::after {
+    @apply border border-brand;
+    scale: 1;
+    animation: click 300ms forwards;
+  }
+}
+
+@keyframes click {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 0.95;
+  }
 }
 
 :root {

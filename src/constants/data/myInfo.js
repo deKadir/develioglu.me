@@ -68,14 +68,15 @@ const myInfo = {
   frontend: {
     intro: "",
     skills: [
-      "HTML",
-      "CSS & SASS",
+      "HTML & CSS & SASS",
       "Tailwind",
       "Javascript",
+      "Typescript",
       "React js",
       "Next js",
       "Svelte",
       "Redux toolkit",
+      "Vercel",
       "React Query",
       "Git & Gitlab",
     ],
@@ -169,6 +170,7 @@ const myInfo = {
     intro: "",
     skills: [
       "Node js",
+      "Typescript",
       "Express",
       "Mongodb",
       "Socket.io",
