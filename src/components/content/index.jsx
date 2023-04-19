@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import myInfo from "../../constants/data/myInfo";
 import CustomCarousel from "../carousel";
 import cn from "classnames";
-import { x, duration, delay } from "../../constants/config/animation.js";
+import { x, duration, delay, once } from "../../constants/config/animation.js";
 import { UseEffectScroll } from "react-use-smooth-scroll";
 import "react-use-smooth-scroll/dist/index.css";
 
@@ -30,11 +30,12 @@ function Content() {
                 initial={{ opacity: 0, x }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay, duration }}
+                viewport={{ once }}
               >
                 <p className="font-bold  text-xl text-accent">{ed.university}</p>
                 <p className="font-medium mt-1 text-accent">{ed.department}</p>
                 <span className=" block mt-2 font-normal text-xs text-accent text-right">
-                  {ed.date.start + "-" + ed.date.end}
+                  {ed.duration}
                 </span>
               </motion.div>
             ))}
@@ -48,6 +49,7 @@ function Content() {
                 initial={{ scale: 0.7 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.4 }}
+                viewport={{ once }}
                 className="flex w-full flex-col gap-2 bg-secondary h-full w-1/ lg:min-w-[300px] p-8 "
               >
                 <p className="text-txtPrimary text-xl">{exp.title}</p>
@@ -58,7 +60,7 @@ function Content() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-right mt-2 text-accent mt-auto">{`${exp.startDate} - ${exp.endDate}`}</p>
+                <p className="text-right  text-accent mt-auto">{exp.duration}</p>
               </motion.div>
             )}
           />
@@ -167,6 +169,7 @@ const Heading = ({ children }) => {
       initial={{ opacity: 0, y: -20 }}
       transition={{ delay, duration }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once }}
     >
       {children}
     </motion.h1>
@@ -179,6 +182,7 @@ const Caption = ({ children, ...others }) => {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ delay, duration }}
+      viewport={{ once }}
       className=" text-base mb-4 md:text-lg lg:text-xl lg:mb-6 font-normal text-accent"
     >
       {children}
@@ -192,6 +196,7 @@ const Title = ({ children }) => {
       initial={{ opacity: 0, x }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ delay, duration }}
+      viewport={{ once }}
       className="mb-4 text-txtPrimary text-2xl lg:text-3xl"
     >
       {children}
@@ -213,6 +218,7 @@ const ProjectItem = (p) => {
       initial={{ scale: 0.7 }}
       whileInView={{ scale: 1 }}
       transition={{ duration: 0.4 }}
+      viewport={{ once }}
       className="flex h-full flex-col items-start bg-secondary  p-6 lg:p-8 "
     >
       <p className="text-txtPrimary text-2xl">{p.title}</p>
@@ -234,6 +240,7 @@ const Skills = ({ children }) => {
       initial={{ opacity: 0, x }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ delay, duration }}
+      viewport={{ once }}
       className="flex gap-2 flex-wrap mb-4 items-start"
     >
       {children}

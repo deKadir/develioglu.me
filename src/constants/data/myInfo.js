@@ -41,25 +41,18 @@ const myInfo = {
         title: "Freelancer",
         duration: "2021-present",
         positions: ["Frontend Developer", "Backend Developer", "Mobile Developer"],
-        startDate: "10/2021",
-        endDate: "present",
       },
       {
         title: "Legacy Software",
         duration: "2022-present",
         positions: ["Frontend Developer"],
-        startDate: "11/2022",
-        endDate: "present",
       },
     ],
     education: [
       {
         university: "Cukurova University",
         department: "Computer Engineering (English)",
-        date: {
-          start: "2019",
-          end: "2024",
-        },
+        duration: "2019/2024",
       },
     ],
     languages: ["Turkish", "English"],
