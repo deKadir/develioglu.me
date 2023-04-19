@@ -154,19 +154,19 @@ const HamburgerIcon = ({ open, setOpen }) => {
 
   return (
     <button
-      className="gap-1 lg:hidden fixed right-2 top-1 px-2 py-3 gap-0 z-[999] bg-secondary"
+      className="gap-1 lg:hidden fixed right-2 top-2 px-3 py-4 gap-0 z-[999] bg-secondary"
       onClick={handleOpen}
     >
       <span
         className={cn({
-          "bg-accent block w-4 h-[2px] transition-all duration-500": true,
+          "bg-accent block w-6 h-[2px] transition-all duration-500": true,
           "translate-y-[1px] rotate-45": open,
           "mb-[2px]": !open,
         })}
       ></span>
       <span
         className={cn({
-          "bg-accent block w-4 h-[2px] transition-all duration-500": true,
+          "bg-accent block w-6 h-[2px] transition-all duration-500": true,
           "-translate-y-[1px] -rotate-45": open,
         })}
       ></span>
