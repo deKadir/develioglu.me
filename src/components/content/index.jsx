@@ -39,13 +39,12 @@ function Content() {
         <Title>Work Experience</Title>
         <CustomCarousel
           items={myInfo.general.experiences}
-          className="mb-4"
           renderItem={(exp) => (
             <motion.div
               initial={{ scale: 0.7 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.4 }}
-              className="flex w-full flex-col gap-2 bg-secondary rounded-md h-full w-1/ lg:min-w-[300px] p-8"
+              className="flex w-full flex-col gap-2 bg-secondary h-full w-1/ lg:min-w-[300px] p-8 "
             >
               <p className="text-txtPrimary text-xl">{exp.title}</p>
               <ul>
@@ -208,7 +207,7 @@ const ProjectItem = (p) => {
       initial={{ scale: 0.7 }}
       whileInView={{ scale: 1 }}
       transition={{ duration: 0.4 }}
-      className="flex h-full flex-col items-start bg-secondary  p-6 lg:p-8  mr-2"
+      className="flex h-full flex-col items-start bg-secondary  p-6 lg:p-8 "
     >
       <p className="text-txtPrimary text-2xl">{p.title}</p>
       <p className="p-1 text-base lg:text-lg text-accent my-2 lg:my-3">{p.description}</p>

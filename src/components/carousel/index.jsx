@@ -31,7 +31,7 @@ function CustomCarousel({ items, renderItem, ...others }) {
       draggable={true}
       showDots={false}
       responsive={responsive}
-      itemClass="lg:mr-4"
+      itemClass="md:mr-2 lg:mr-4"
       customLeftArrow={<CustomLeftArrow />}
       customRightArrow={<CustomRightArrow />}
     >
