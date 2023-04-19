@@ -27,8 +27,8 @@ function CustomCarousel({ items, renderItem, ...others }) {
   return (
     <Carousel
       {...others}
-      swipeable={false}
-      draggable={false}
+      swipeable={true}
+      draggable={true}
       showDots={false}
       responsive={responsive}
       itemClass="lg:mr-4"
@@ -45,7 +45,7 @@ export default CustomCarousel;
 const CustomLeftArrow = ({ onClick, ...rest }) => {
   return (
     <button
-      className="absolute left-0 w-[42px] h-[42px] border border-txtPrimary z-10 rounded-full "
+      className="absolute left-0  bottom-0 w-[42px] h-[42px] border border-txtPrimary z-10 rounded-full "
       onClick={onClick}
     >
       <span className="relative before:absolute before:content-['\279C'] inline-block text-txtPrimary before:-left-[8px] before:rotate-180 before:-top-[18px]"></span>
@@ -55,7 +55,7 @@ const CustomLeftArrow = ({ onClick, ...rest }) => {
 const CustomRightArrow = ({ onClick, ...rest }) => {
   return (
     <button
-      className="absolute right-0 w-[42px] h-[42px] border border-txtPrimary z-10 rounded-full "
+      className="absolute right-0 top-0 w-[42px] h-[42px] border border-txtPrimary z-10 rounded-full "
       onClick={onClick}
     >
       <span className="relative before:absolute before:content-['\279C'] inline-block text-txtPrimary before:-left-[8px] z-10 before:-top-[16px] "></span>

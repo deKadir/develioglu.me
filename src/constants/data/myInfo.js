@@ -95,6 +95,12 @@ const myInfo = {
       },
 
       {
+        title: "Kaf Life",
+        description:
+          "Blockchain technology website. Implemented authentication operations using React.",
+        url: "https://kaf-life-frontend.vercel.app/",
+      },
+      {
         title: "Oak Hill Coin",
         description:
           "Crypto coin startup project that is used for buying and selling oak coins. Created using React, SASS, redux.",
@@ -112,31 +118,25 @@ const myInfo = {
         url: "https://spotify-clone-web-svelte.vercel.app/",
       },
       {
-        title: "Kaf Life",
-        description:
-          "Blockchain technology website. Implemented authentication operations using React.",
-        url: "https://kaf-life-frontend.vercel.app/",
-      },
-      {
         title: "Netflix",
         description: "Netflix landing page created using Next js and firebase",
         url: "https://netflix-clone-web-gamma.vercel.app/",
       },
       {
-        title: "3D Card animation",
-        description: "3D Card animation using HTML and CSS",
-        url: "https://3d-card-effect-one.vercel.app/",
+        title: "SpaceX Events",
+        description: "SpaceX landing page that is created by using HTML, CSS, javascript",
+        url: "https://spacex-web-clone.vercel.app/",
       },
       {
         title: "Instagram",
         description:
-          "Instagram clone project including authentication, follow-unfollow, chat system. Created using React.",
+          "Instagram clone project including authentication, follow-unfollow,sharing posts, chat system. Created using React.",
         url: "https://instagram-web-frontend.vercel.app/",
       },
       {
-        title: "SpaceX Events",
-        description: "SpaceX landing page that is created by using HTML, CSS, javascript",
-        url: "https://spacex-web-clone.vercel.app/",
+        title: "3D Card animation",
+        description: "3D Card animation using HTML and CSS",
+        url: "https://3d-card-effect-one.vercel.app/",
       },
       {
         title: "Covid tracker",
