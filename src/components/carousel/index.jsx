@@ -45,6 +45,7 @@ export default CustomCarousel;
 const CustomLeftArrow = ({ onClick, ...rest }) => {
   return (
     <button
+      aria-label="scroll left"
       className="absolute left-0  bottom-0 w-[42px] h-[42px] border border-txtPrimary z-10 rounded-full "
       onClick={onClick}
     >
@@ -55,6 +56,7 @@ const CustomLeftArrow = ({ onClick, ...rest }) => {
 const CustomRightArrow = ({ onClick, ...rest }) => {
   return (
     <button
+      aria-label="scroll right"
       className="absolute right-0 top-0 w-[42px] h-[42px] border border-txtPrimary z-10 rounded-full "
       onClick={onClick}
     >

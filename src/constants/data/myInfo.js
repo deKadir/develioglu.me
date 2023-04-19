@@ -9,6 +9,7 @@ const myInfo = {
     {
       icon: MdLocationOn,
       title: "Adana/Turkey",
+      url: "/",
     },
     {
       icon: MdEmail,
@@ -57,7 +58,6 @@ const myInfo = {
     ],
     languages: ["Turkish", "English"],
   },
-  sections: [{}],
   frontend: {
     intro: "",
     skills: [

@@ -25,8 +25,9 @@ function Content() {
           </Caption>
           <div className="text-light  inline-block text-left mb-4">
             <Title>Education</Title>
-            {myInfo.general.education.map((ed) => (
+            {myInfo.general.education.map((ed, key) => (
               <motion.div
+                key={key}
                 initial={{ opacity: 0, x }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay, duration }}
@@ -44,8 +45,9 @@ function Content() {
           <Title>Work Experience</Title>
           <CustomCarousel
             items={myInfo.general.experiences}
-            renderItem={(exp) => (
+            renderItem={(exp, key) => (
               <motion.div
+                key={key}
                 initial={{ scale: 0.7 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.4 }}
@@ -54,8 +56,11 @@ function Content() {
               >
                 <p className="text-txtPrimary text-xl">{exp.title}</p>
                 <ul>
-                  {exp.positions.map((exp) => (
-                    <li className="relative before:content-['\2713'] before:mr-2 text-accent text-xl">
+                  {exp.positions.map((exp, key) => (
+                    <li
+                      key={key}
+                      className="relative before:content-['\2713'] before:mr-2 text-accent text-xl"
+                    >
                       {exp}
                     </li>
                   ))}
@@ -67,8 +72,8 @@ function Content() {
 
           <Title>Languages</Title>
           <ul className="text-light mb-4 font-medium flex flex-col gap-1">
-            {myInfo.general.languages.map((l) => (
-              <li className="flex items-center">
+            {myInfo.general.languages.map((l, key) => (
+              <li className="flex items-center" key={key}>
                 <span className="relative before:content-['\2713'] w-6 h-6 before:absolute before:left-[6px] bg-secondary rounded-full mr-2"></span>
                 <p>{l}</p>
               </li>
@@ -86,8 +91,8 @@ function Content() {
           </Caption>
           <Title>Skills</Title>
           <Skills>
-            {myInfo.frontend.skills.map((s) => (
-              <li>
+            {myInfo.frontend.skills.map((s, key) => (
+              <li key={key}>
                 <Skill>{s}</Skill>
               </li>
             ))}
@@ -97,7 +102,7 @@ function Content() {
             items={myInfo.frontend.projects}
             className="mb-4"
             itemClass="mr-2"
-            renderItem={(p) => <ProjectItem {...p} />}
+            renderItem={(p, key) => <ProjectItem {...p} key={key} />}
           />
         </Section>
 
@@ -111,8 +116,8 @@ function Content() {
           </Caption>
           <Title>Skills</Title>
           <Skills>
-            {myInfo.backend.skills.map((s) => (
-              <li>
+            {myInfo.backend.skills.map((s, key) => (
+              <li key={key}>
                 <Skill>{s}</Skill>
               </li>
             ))}
@@ -121,7 +126,7 @@ function Content() {
           <CustomCarousel
             className="mb-4"
             items={myInfo.backend.projects}
-            renderItem={(p) => <ProjectItem {...p} />}
+            renderItem={(p, key) => <ProjectItem {...p} key={key} />}
           />
         </Section>
         <Section id="mobile">
@@ -135,8 +140,8 @@ function Content() {
           </Caption>
           <Title>Skills</Title>
           <Skills>
-            {myInfo.mobile.skills.map((s) => (
-              <li>
+            {myInfo.mobile.skills.map((s, key) => (
+              <li key={key}>
                 <Skill>{s}</Skill>
               </li>
             ))}
@@ -145,7 +150,7 @@ function Content() {
           <CustomCarousel
             className="mb-4"
             items={myInfo.mobile.projects}
-            renderItem={(p) => <ProjectItem {...p} />}
+            renderItem={(p,key) => <ProjectItem {...p} key={key} />}
           />
         </Section>
       </UseEffectScroll>

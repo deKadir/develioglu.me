@@ -55,7 +55,7 @@ function Sidebar() {
         className="hidden lg:block w-72 sticky top-0  shrink-0 h-full "
       >
         <div className="p-4 ">
-          <div class="perspective-9 ">
+          <div className="perspective-9 ">
             <img
               className="-rotate-z-5 rotate-y-20"
               src={myInfo.profileImg}
@@ -63,8 +63,8 @@ function Sidebar() {
             />
           </div>
           <ul className="text-accent text-2xl flex flex-col gap-y-4 mt-6">
-            {myInfo.socialLinks.map((link) => (
-              <li>
+            {myInfo.socialLinks.map((link, key) => (
+              <li key={key}>
                 <a href={link.url} className="flex items-center gap-4" target="_blank">
                   <link.icon className="fill-white" />
                   <p className="text-lg">{link.title}</p>
@@ -159,6 +159,7 @@ const SidebarMobile = ({ open, setOpen }) => {
             <motion.li
               initial="initial"
               animate={open ? "animate" : "initial"}
+              key={i}
               variants={{
                 initial: {
                   opacity: 0,
@@ -191,6 +192,7 @@ const HamburgerIcon = ({ open, setOpen }) => {
 
   return (
     <button
+      aria-label="open menu"
       className="gap-1 lg:hidden fixed right-2 top-2 px-3 py-4 gap-0 z-[999] bg-secondary"
       onClick={handleOpen}
     >
