@@ -1,13 +1,49 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import myInfo from "../../constants/data/myInfo";
 import { motion } from "framer-motion";
 import { duration, delay } from "../../constants/config/animation";
+import { gsap } from "gsap";
 import cn from "classnames";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const menuItems = ["General", "Frontend", "Backend", "Mobile"];
 
 function Sidebar() {
   const [open, setOpen] = useState(false);
+
+  useLayoutEffect(() => {
+    let hoverEl = document.querySelector("#hover");
+
+    gsap.registerPlugin(ScrollTrigger);
+    const tl = gsap.timeline();
+    tl.fromTo(
+      hoverEl,
+      { top: 0 },
+      {
+        top: 45,
+      }
+    )
+      .fromTo(
+        hoverEl,
+        { top: 45 },
+        {
+          top: 90,
+        }
+      )
+      .fromTo(
+        hoverEl,
+        { top: 90 },
+        {
+          top: 135,
+        }
+      );
+    ScrollTrigger.create({
+      animation: tl,
+      start: "top top",
+      scrub: true,
+    });
+  }, []);
+
   return (
     <>
       <SidebarMobile open={open} setOpen={setOpen} />
@@ -44,6 +80,7 @@ function Sidebar() {
               className="absolute top-0 py-2  bg-secondary text-opacity-0 left-0 right-0 "
               style={{
                 clipPath: "polygon(5% 0, 101% 0, 100% 50%, 101% 100%, 5% 100%, 0% 50%)",
+                top: 0,
               }}
             >
               &nbsp;
