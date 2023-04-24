@@ -68,6 +68,7 @@ const myInfo = {
       "React js",
       "Next js",
       "Svelte",
+      "Socket",
       "Redux toolkit",
       "Vercel",
       "React Query",
@@ -163,6 +164,7 @@ const myInfo = {
     intro: "",
     skills: [
       "Node js",
+      "Javascript",
       "Typescript",
       "Express",
       "Mongodb",
@@ -209,10 +211,12 @@ const myInfo = {
     skills: [
       "React Native",
       "Javascript",
+      "Typescript",
       "Expo",
       "RN Cli",
       "React query",
       "Firebase",
+      "Push Notification",
       "Redux toolkit",
       "Git & Gitlab",
     ],
