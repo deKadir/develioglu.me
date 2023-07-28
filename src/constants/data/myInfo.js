@@ -40,12 +40,17 @@ const myInfo = {
     experiences: [
       {
         title: "Freelancer",
-        duration: "2021-present",
+        duration: "Oct, 2021 - present",
         positions: ["Frontend Developer", "Backend Developer", "Mobile Developer"],
       },
       {
         title: "Legacy Software",
-        duration: "2022-present",
+        duration: "Nov, 2022 - May, 2023",
+        positions: ["Frontend Developer"],
+      },
+      {
+        title: "NETAX",
+        duration: "May, 2023 - present",
         positions: ["Frontend Developer"],
       },
     ],

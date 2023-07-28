@@ -4,8 +4,10 @@ import Sidebar from "./components/sidebar";
 import Content from "./components/content";
 import ScrollMouse from "./components/scrollMouse";
 import LanguageSwitch from "./components/languageSwitch";
+import { useEffect, useState } from "react";
 
 function App() {
+
   return (
     <>
       <Background />
