@@ -200,7 +200,7 @@ const myInfo = {
       {
         title: "Cubook",
         description:
-          "Social media website for university students. Created using React, Tailwind and developed by 3 students.",
+          "Social media website for university students. Created using React, Tailwind, React Query developed by team consists of 3 members.",
         url: "https://drive.google.com/drive/folders/1FE_EG_muhtOkCyO8jt63rVdOe1PadSMG",
       },
       {
