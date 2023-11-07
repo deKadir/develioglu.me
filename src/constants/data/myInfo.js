@@ -41,17 +41,22 @@ const myInfo = {
       {
         title: "Freelancer",
         duration: "Oct, 2021 - present",
-        positions: ["Frontend Developer", "Backend Developer", "Mobile Developer"],
+        positions: [
+          "Frontend Developer",
+          "Backend Developer",
+          "Mobile Developer",
+        ],
       },
-      {
-        title: "Legacy Software",
-        duration: "Nov, 2022 - May, 2023",
-        positions: ["Frontend Developer"],
-      },
+
       {
         title: "NETAX",
-        duration: "May, 2023 - present",
+        duration: "May, 2023 - Aug, 2023",
         positions: ["Frontend Developer"],
+      },
+      {
+        title: "JOTFORM - Internship",
+        duration: "Aug, 2023 - Sep, 2023",
+        positions: ["Frontend Developer", "Extension developer"],
       },
     ],
     education: [
@@ -72,6 +77,7 @@ const myInfo = {
       "Typescript",
       "React js",
       "Next js",
+      "Vue js",
       "Svelte",
       "Socket",
       "Redux toolkit",
@@ -81,10 +87,10 @@ const myInfo = {
     ],
     projects: [
       {
-        title: "Portfolio Website",
+        title: "develioglu.me",
         description:
-          "Portfolio website for myself and for fullstack developers created using React and Tailwind.",
-        url: "https://cv-template-one.vercel.app/",
+          "Portfolio website for myself that is created using React and Tailwind.",
+        url: "http://develioglu.me/",
       },
       {
         title: "Cubook",
@@ -113,7 +119,8 @@ const myInfo = {
       },
       {
         title: "Spotify",
-        description: "Spotify clone project created using Svelte kit and tailwind.",
+        description:
+          "Spotify clone project created using Svelte kit and tailwind.",
         url: "https://spotify-clone-web-svelte.vercel.app/",
       },
       {
@@ -123,7 +130,8 @@ const myInfo = {
       },
       {
         title: "SpaceX Events",
-        description: "SpaceX landing page that is created by using HTML, CSS, javascript",
+        description:
+          "SpaceX landing page that is created by using HTML, CSS, javascript",
         url: "https://spacex-web-clone.vercel.app/",
       },
       {
@@ -145,17 +153,20 @@ const myInfo = {
       },
       {
         title: "Image editor",
-        description: "Image editor for rotating, flipping and adding effects to images.",
+        description:
+          "Image editor for rotating, flipping and adding effects to images.",
         url: "https://image-editor-orcin.vercel.app/",
       },
       {
         title: "Web Code Editor",
-        description: "Web Code editor for web developers including HTML, CSS, js languages.",
+        description:
+          "Web Code editor for web developers including HTML, CSS, js languages.",
         url: "https://web-code-editor.vercel.app/",
       },
       {
         title: "Comparison Slider",
-        description: "Slider that is used for comparision of images. Created using HTML, CSS, JS.",
+        description:
+          "Slider that is used for comparision of images. Created using HTML, CSS, JS.",
         url: "https://github.com/deKadir/comparison-slider",
       },
       {
@@ -174,7 +185,7 @@ const myInfo = {
       "Express",
       "Mongodb",
       "Socket.io",
-      "Scrapping",
+      "Web Scrapping",
       "Postman",
       "Heroku",
       "Git & Gitlab",
@@ -244,7 +255,8 @@ const myInfo = {
       },
       {
         title: "Turkish Dictionary",
-        description: "Turkish dictionary application created using React native",
+        description:
+          "Turkish dictionary application created using React native",
         url: "https://github.com/deKadir/Turkce-Sozluk",
       },
     ],
