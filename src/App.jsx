@@ -7,7 +7,6 @@ import LanguageSwitch from "./components/languageSwitch";
 import { useEffect, useState } from "react";
 
 function App() {
-
   return (
     <>
       <Background />
