@@ -1,4 +1,4 @@
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/profile.jpeg";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsFillTelephoneFill } from "react-icons/bs";
 
