@@ -56,16 +56,16 @@ function Sidebar() {
       >
         <div className="p-4 ">
           <div className="perspective-9 ">
-            <img
-              className="-rotate-z-5 rotate-y-20"
-              src={myInfo.profileImg}
-              alt={myInfo.fullName}
-            />
+            <img src={myInfo.profileImg} alt={myInfo.fullName} />
           </div>
           <ul className="text-accent text-2xl flex flex-col gap-y-4 mt-6">
             {myInfo.socialLinks.map((link, key) => (
               <li key={key}>
-                <a href={link.url} className="flex items-center gap-4" target="_blank">
+                <a
+                  href={link.url}
+                  className="flex items-center gap-4"
+                  target="_blank"
+                >
                   <link.icon className="fill-white" />
                   <p className="text-lg">{link.title}</p>
                 </a>
@@ -79,7 +79,8 @@ function Sidebar() {
               id="hover"
               className="absolute top-0 py-2  bg-secondary text-opacity-0 left-0 right-0 "
               style={{
-                clipPath: "polygon(5% 0, 101% 0, 100% 50%, 101% 100%, 5% 100%, 0% 50%)",
+                clipPath:
+                  "polygon(5% 0, 101% 0, 100% 50%, 101% 100%, 5% 100%, 0% 50%)",
                 top: 0,
               }}
             >
@@ -175,7 +176,11 @@ const SidebarMobile = ({ open, setOpen }) => {
                 },
               }}
             >
-              <a href={link.url} target="_blank" className="flex items-center gap-4 py-2">
+              <a
+                href={link.url}
+                target="_blank"
+                className="flex items-center gap-4 py-2"
+              >
                 <link.icon />
                 {link.title}
               </a>
